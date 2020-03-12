@@ -1,21 +1,25 @@
 ---
 layout: sidenote
 title:  "How to Multicast Commands"
+url: /how-to-multicast-commands
 comments: true
 date: 2020-03-07
+categories: side-notes
 author_name : Steve Mitchell
 author_url : /author/steve
 author_avatar: steve
 show_avatar : false
 read_time : 4
 show_related_posts: false
+feature_image: feature-sidenotes
+square_related: recommend-sidenotes
 ---
 
 If you are more Dev than Ops, like me, then you will think this is cool. If you are more Ops than Dev, then you already know how to do this. When I press ⌘-⇧-P from iTerm I am immediately connected to all my Raspberry Pis at the same time. It’s great for running simultaneous software updates.
 
 ## Ta-Dah!
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/tadah.png" description="Sign-in with Shortcut" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/tadah.png" description="Sign-in with Shortcut" %}
 
 It just takes three steps to do:
 
@@ -27,7 +31,7 @@ It just takes three steps to do:
 
 Add the hostname of all the Raspberry nodes to the /etc/hosts file on your computer.
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/hostsfile.png" description="Add Pis to Hosts File" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/hostsfile.png" description="Add Pis to Hosts File" %}
 
 ## Use SSH Keys for Authentication
 
@@ -53,29 +57,29 @@ Read <a href="https://blog.andrewray.me/how-to-create-custom-iterm2-window-arran
 
 Split your terminal window into panes for all the Raspberry Pi nodes. Then create a separate profile for each host.
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/iterm-profile_anotated.png" description="Create Profile for Each Host" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/iterm-profile_anotated.png" description="Create Profile for Each Host" %}
 
 Note how the “Send text at start” field is set to “ssh pi@pi1” to log into the host. Each profile signs into a different host. 
 
 Select each terminal pane and create a session. Select the corresponding profile from the list and click the Use Selected Profile button.
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/iterm-session.png" description="Create a Session in each Pane linked to a Profile" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/iterm-session.png" description="Create a Session in each Pane linked to a Profile" %}
 
 When all of the terminal panes are tied to a session, save the entire window.
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/iterm-saveWindows.png" description="Save all the Panes in the Window" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/iterm-saveWindows.png" description="Save all the Panes in the Window" %}
 
 Finally, add a shortcut to open the window. I chose ⌘-⇧-P (for Pi).
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/iterm-shortcut.png" description="Add Keyboard Shortcut to Launch Window" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/iterm-shortcut.png" description="Add Keyboard Shortcut to Launch Window" %}
 
 Now, when I open iTerm and press, ⌘-⇧-P, iTerm opens a window with six sessions, each automatically connected to each Raspberry Pi.
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/tadah.png" description="Sign-in with Shortcut" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/tadah.png" description="Sign-in with Shortcut" %}
 
 To simultaneous type in all six terminal windows, use iTerm’s Broadcast feature.
 
-{% include image.html url="/img/side-note-assets/how-to-multicast-commands/iterm-broadcast.png" description="How to Broadcast Keystrokes to all Raspberry Pis" %}
+{% include image.html url="/img/post-assets/how-to-multicast-commands/iterm-broadcast.png" description="How to Broadcast Keystrokes to all Raspberry Pis" %}
 
 That’s it. These three things will make working with your Raspberry Pi cluster so much more enjoyable.
 

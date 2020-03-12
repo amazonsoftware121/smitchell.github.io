@@ -74,7 +74,7 @@ If you buy an official Raspberry Pi power supply you can ignore this section. If
 {% include image.html url="/img/post-assets/2020-02-26-some-assembly-required/power.png" description="Power Distribution" %}
 Raspberry Pis had a bug in its USB-C connector, causing some USB-C cables to not work with the Raspberry Pi 4. This was corrected in the Raspberry Pi 4B V1.2. If you have an early version, choose one from those <a href="https://www.tomshardware.com/news/raspberry-pi-4-usb-c-cables-that-work,39869.html">reviewed on Top’s Hardware</a>. I did, and they work fine. Keep your shipping material slips handy, in case you buy an incompatible cable. 
 
-{% include tip.html content="See the side-note: <a href='/side_notes/how-to-check-the-revision-number-of-your-raspberry-pi.html'>How to check the revision number of your Raspberry Pi</a>." %}
+{% include tip.html content="See the side-note: <a href='/how-to-check-the-revision-number-of-your-raspberry-pi'>How to check the revision number of your Raspberry Pi</a>." %}
 
 ## Cooling
 Nobody likes listening to fans. I have a Raspberry Pi 3 with a variable speed fan that can get quite loud.
@@ -102,7 +102,7 @@ Finish your mechanical installation of the cluster parts and we’ll pick-up wit
 I’m so happy that I work at <a href="https://thinkahead.com">Ahead</a> where this kind of experimentation is encouraged. If you want to learn about opportunities at Ahead, please reach out to my buddy, <a href="mailto:kaleigh.baker@thinkahead.com">Kaleigh</a>, to find out what positions are open or drop her your resume. 
 
 ## Next
-In the next installment of the series, <a href="https://smitchell.github.io/how-to-configure-raspbian-linux">How to Configure Raspbian</a>, I detail the set-up of Raspbian, booting off of SSD.
+In the next installment of the series, <a href="/how-to-configure-raspbian-linux">How to Configure Raspbian</a>, I detail the set-up of Raspbian, booting off of SSD.
 
 ----
 ### References

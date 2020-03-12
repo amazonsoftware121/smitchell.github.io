@@ -10,8 +10,8 @@ author_url : /author/steve
 author_avatar: steve
 show_avatar : false
 read_time : 5
-feature_image: feature-tweets
 show_related_posts: false
+feature_image: feature-tweets
 square_related: recommend-kubernetes
 ---
 
