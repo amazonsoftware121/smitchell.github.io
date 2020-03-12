@@ -16,7 +16,7 @@ square_related: recommend-raspberry
 ---
 {% include image.html url="/img/post-assets/2020-03-10-how-to-configure-raspbian/raspbian-logo-300x253.png" description="Raspbian Logo" %}
 
-This article is the second in my series describing how I built a small data center out of Raspberry Pis and the struggles I overcame along the way. The first article, <a href="https://smitchell.github.io/some-assembly-required">Some Assembly Required</a>, covered choosing parts and assembling the cluster. This article picks up from there with the installation of the operating system on your Raspberry Pis.
+This article is the second in my series describing how I built a small data center out of Raspberry Pis and the struggles I overcame along the way. The first article, <a href="/some-assembly-required">Some Assembly Required</a>, covered choosing parts and assembling the cluster. This article picks up from there with the installation of the operating system on your Raspberry Pis.
 
 Six steps to setting up your OS:
 
@@ -78,7 +78,7 @@ sudo apt update
 sudo apt full-upgrade -y
 ```
 
-{% include tip.html content="Would you like to be able to update all Rasbian on your Raspberry Pis at once and broadcast commands to all your Raspberry Pis simultaneously? If so, see my side-note <a href='/side_notes/how-to-multicast-commands.html'>How to Multicast Commands</a>. More than just multicasting, it shows how to use a keyboard shortcut to launch multiple terminal sessions simultaneously, each of which automatically connects to a different Raspberry Pi." %}
+{% include tip.html content="Would you like to be able to update all Raspbian on your Raspberry Pis at once and broadcast commands to all your Raspberry Pis simultaneously? If so, see my side-note <a href='/how-to-multicast-commands'>How to Multicast Commands</a>. More than just multicasting, it shows how to use a keyboard shortcut to launch multiple terminal sessions simultaneously, each of which automatically connects to a different Raspberry Pi." %}
 # Adjust the Configuration
 Raspbian has a configuration utility to edit its configuration. We’ll use it to make initial changes.
 After making this group of changes, we’ll reboot and make sure we can connect to the host. These changes can all be made in a terminal, however, the configuration tool makes it easier if your Linux skills are rusty.
@@ -209,7 +209,7 @@ sudo cp /boot/cmdline.txt /boot/cmdline.txt.bak
 
 Carefully edit /boot/cmdline.txt and change the root path, "root=/dev/sda," and append the usb-storage.quirks parameter, i.e. "usb-storage.quirks=045b:0229:u."
 
-{% include tip.html content="To learn how to use \"usb-storage.quirks\" to bind to the right USB storage driver, see my side note: <a href='https://smitchell.github.io/side_notes/how-to-bind-to-the-right-usb-storage-driver.html'>How to bind to the right USB Storage Driver</a>." %}
+{% include tip.html content="To learn how to use \"usb-storage.quirks\" to bind to the right USB storage driver, see my side note: <a href='/how-to-bind-to-the-right-usb-storage-driver.html'>How to bind to the right USB Storage Driver</a>." %}
 
 Here is how the cmdline looks before and after editing.
 ### BEFORE
@@ -227,7 +227,7 @@ findmnt -n -o SOURCE /
 
 The response from “findmnt” should be “/dev/sda” (or whatever you passed into cmdline.txt).
 
-{% include tip.html content="Extend the life of your MicroSD or SSD with a few tweaks: <a href='/side_notes/how-to-reduce-writes-to-ssd.html'>How to Reduce Writes to SSD</a>." %}
+{% include tip.html content="Extend the life of your MicroSD or SSD with a few tweaks: <a href='/how-to-reduce-writes-to-ssd'>How to Reduce Writes to SSD</a>." %}
 
 ### The Raspberry Pi won’t boot - What do I do?
 If you make a mistake in the cmdline.txt file, booting might fail. No worries. That is why you made a backup copy of cmdline.txt before making changes. Remove the MicroSD card from the Pi, pop it into your computer, and restore the original /boot/cmdline.txt file from the backup you created. Problem solved.

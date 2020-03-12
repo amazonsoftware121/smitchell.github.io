@@ -1,14 +1,18 @@
 ---
 layout: sidenote
 title:  "How to Reduce Writes to SSD"
+url: /how-to-reduce-writes-to-ssd
 comments: true
 date: 2020-03-10
+categories: side-notes
 author_name : Steve Mitchell
 author_url : /author/steve
 author_avatar: steve
 show_avatar : false
 read_time : 4
 show_related_posts: false
+feature_image: feature-sidenotes
+square_related: recommend-sidenotes
 ---
 ## Reduce Writes to the MicroSD or SSD
 Whether or not you use an SSD, you should know that too many writes shorten the life of MicroSD cards and SSDs. To reduce the number of writes, I applied some tips from this post by <a href="http://ideaheap.com/2013/07/stopping-sd-card-corruption-on-a-raspberry-pi/">Nicholas Wertzberger</a>.
