@@ -58,10 +58,7 @@ Mount the MicroSD card that you just flashed and use the “touch” command to 
 ```shell
 touch /Volumes/boot/ssh
 ```
-TEST
-{% highlight shell %}
-touch me iff you care
-{% endhighlight %}
+
 # First Boot
 There are a number of changes to make after the first boot. Assuming that you are running headless, the first challenge is discovering the DHCP IP address assigned to the Raspberry Pi when it booted.
 ## Find the IP Address
